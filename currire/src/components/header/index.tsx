@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Header = () => {
 	return (
@@ -16,6 +17,7 @@ const Header = () => {
 					<li>
 						<Link href={"/history"}>履歴</Link>
 					</li>
+					<li>{/* <ThemeToggle /> */}</li>
 				</ul>
 			</div>
 		</div>
