@@ -1,4 +1,5 @@
-export const supportedTheme: string[] = [
+// src/theme/theme.ts
+export const supportedTheme = [
     "light", "dark", "cupcake", "bumblebee",
     "emerald", "corporate", "synthwave", "retro",
     "cyberpunk", "valentine", "halloween", "garden",
@@ -8,4 +9,5 @@ export const supportedTheme: string[] = [
     "acid", "lemonade", "night", "coffee",
     "winter", "dim", "nord", "sunset",
 ] as const;
-export type themeType = typeof supportedTheme[number];
+
+export type ThemeType = typeof supportedTheme[number];
