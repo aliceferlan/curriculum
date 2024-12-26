@@ -12,7 +12,7 @@ const Header = () => {
 			<div className="flex-none">
 				<ul className="menu menu-horizontal px-1">
 					<li>
-						<Link href={"/carry"}>職務経歴</Link>
+						<Link href={"/carrier"}>職務経歴</Link>
 					</li>
 					<li>
 						<Link href={"/history"}>履歴</Link>

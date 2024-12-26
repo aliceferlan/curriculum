@@ -1,6 +1,6 @@
-// app/career/page.tsx
+// app/Carrier/page.tsx
 import { Metadata } from "next";
-import Career from "@/components/carrire";
+import Carrier from "@/components/Carrier";
 
 // メタデータの設定
 export const metadata: Metadata = {
@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 };
 
 // 職務経歴ページのメインコンポーネント
-export default function CareerPage() {
+export default function CarrierPage() {
 	return (
 		<main className="container mx-auto px-4 py-8">
 			<h1 className="text-4xl font-bold mb-8 text-center">職務経歴</h1>
-			<Career />
+			<Carrier />
 		</main>
 	);
 }

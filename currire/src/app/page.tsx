@@ -24,7 +24,7 @@ export default function Home() {
 
 			{/* ナビゲーションカード */}
 			<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-				<Link href="/career" className="card">
+				<Link href="/carrier" className="card">
 					<div className="p-6 bg-white hover:bg-gray-300 rounded-lg shadow-lg">
 						<h2 className="text-2xl font-bold mb-2">職務経歴</h2>
 						<p className="text-gray-600">
