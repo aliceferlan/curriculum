@@ -1,5 +1,5 @@
 // 使用する型のみをインポート
-import { CarrierSkillsProps } from "@/types/carrire";
+import { CarrierSkillsProps } from "@/types/carrier";
 
 // アイコン定義のオブジェクト
 const icons: { [key: string]: { iconPath: string; id: string } } = {
