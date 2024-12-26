@@ -1,7 +1,6 @@
 import { CarrierTimeline } from "./CarrierTimeline";
 import { CarrierSkills } from "./CarrierSkills";
-
-import { CarrierEntry, CarrierSkillsProps } from "@/types/carrier";
+import { CarrierEntry, CarrierSkillsProps } from "@/types/carrire";
 
 // サンプルデータ（実際のデータに置き換えてください）
 const CarrierData: CarrierEntry[] = [
@@ -77,13 +76,13 @@ export default function Carrier() {
 			{/* タイムライン */}
 			<section>
 				<h2 className="text-2xl font-semibold mb-6">職務経歴</h2>
-				<CarrierTimeline Carriers={CarrierData} />
+				<CarrierTimeline carriers={CarrierData} />
 			</section>
 
 			{/* スキルセット */}
 			<section>
 				<h2 className="text-2xl font-semibold mb-6">技術スタック</h2>
-				<CarrierSkills Carriers={skillData} />
+				<CarrierSkills technologies={skillData.technologies} />
 			</section>
 		</div>
 	);

@@ -3,13 +3,13 @@
 import { CarrierEntry } from "@/types/carrier";
 
 interface CarrierTimelineProps {
-	Carriers: CarrierEntry[];
+	carriers: CarrierEntry[];
 }
 
-export function CarrierTimeline({ Carriers }: CarrierTimelineProps) {
+export function CarrierTimeline({ carriers }: CarrierTimelineProps) {
 	return (
 		<ul className="timeline timeline-vertical">
-			{Carriers.map((Carrier, index) => (
+			{carriers.map((Carrier, index) => (
 				<li key={index} className="timeline-item">
 					<div className="timeline-start">{Carrier.period}</div>
 					<div className="timeline-end timeline-box">
