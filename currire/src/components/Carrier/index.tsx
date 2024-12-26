@@ -8,11 +8,11 @@ const CarrierData: CarrierEntry[] = [
 		period: "2021年2月 - 現在",
 		position: "情報システム課",
 		description: [
-			"Next.jsを用いたWebアプリケーションの開発",
-			"チームリーダーとして5名のエンジニアのマネジメント",
-			"パフォーマンス最適化によるLCPの50%改善",
+			"PHP, JavaScript, CSSを使用した社内ポータルサイトの開発・運用",
+			"Pythonによる一部業務の自動化",
+			"C#を使用した社内アプリケーションの開発",
 		],
-		technologies: ["Next.js", "TypeScript", "TailwindCSS"],
+		technologies: ["PHP", "JavaScript", "CSS", "Python", "C#"],
 	},
 	{
 		company: "グループホーム",
@@ -26,18 +26,40 @@ const CarrierData: CarrierEntry[] = [
 const skillData: CarrierSkillsProps = {
 	technologies: [
 		{
-			whatSkill: "JavaScript",
-			howLong: "5年",
+			whatSkill: "PHP",
+			howLong: "2年",
 		},
 		{
-			whatSkill: "TypeScript",
-			howLong: "3年",
+			whatSkill: "Javascript",
+			howLong: "2年",
 		},
+		{
+			whatSkill: "SQL",
+			howLong: "2年",
+		},
+		{
+			whatSkill: "Python",
+			howLong: "1年",
+		},
+		{
+			whatSkill: "C#",
+			howLong: "1年",
+		},
+		{
+			whatSkill: "React",
+			howLong: "Hobby",
+		},
+
+		{
+			whatSkill: "NextJS",
+			howLong: "Hobby",
+		},
+
 		// 他のスキルデータ...
 	],
 };
 const summary =
-	"前職では情報システムとして、社内アプリ開発に従事してきました。\n社員のスキルレベルを考慮し、'誰でもマニュアルを読まなくても使い方が分かる'をモットーに開発を進めてきました。";
+	"現職では情報システムとして、社内アプリ開発に従事しております。\n社員のスキルレベルを考慮し、'誰でもマニュアルを読まなくても使い方が分かる'をモットーに開発を進めてきました。";
 
 export default function Carrier() {
 	return (
@@ -59,7 +81,7 @@ export default function Carrier() {
 			{/* スキルセット */}
 			<section>
 				<h2 className="text-2xl font-semibold mb-6">技術スタック</h2>
-				<CarrierSkills Carriers={CarrierData} />
+				<CarrierSkills Carriers={skillData} />
 			</section>
 		</div>
 	);

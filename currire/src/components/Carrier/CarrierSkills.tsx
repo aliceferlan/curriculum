@@ -1,37 +1,45 @@
-// components/CarrierTimeline.tsx
 import Timeline from "daisyui";
 
 interface CarrierTimelineProps {
-	Carriers: CarrierEntry[];
+	Carriers: CarrierSkillsProps;
+}
+
+const icons: { [key: string]: { iconPath: string; id: string } } = {
+	php: { iconPath: "devicon-php-plain", id: "php" },
+	react: { iconPath: "devicon-react-original", id: "react" },
+	nextjs: { iconPath: "devicon-nextjs-plain", id: "nextjs" },
+	javascript: { iconPath: "devicon-javascript-plain", id: "javascript" },
+	sql: { iconPath: "devicon-mysql-plain", id: "sql" },
+	python: { iconPath: "devicon-python-plain", id: "python" },
+	csharp: { iconPath: "devicon-csharp-plain", id: "c#" },
+};
+
+function getIconPath(iconId: string): string {
+	const iconInfo = Object.values(icons).find((icon) => icon.id === iconId);
+
+	return iconInfo ? iconInfo.iconPath : "devicon-unknown";
 }
 
 export function CarrierSkills({ Carriers }: CarrierTimelineProps) {
 	return (
-		<ul className="timeline timeline-vertical">
-			{Carriers.map((Carrier, index) => (
-				<li key={index} className="timeline-item">
-					<div className="timeline-start">{Carrier.period}</div>
-					<div className="timeline-middle"></div>
-					<div className="timeline-end timeline-box">
-						<h3 className="font-bold text-lg">{Carrier.company}</h3>
-						<p className="text-sm opacity-80">{Carrier.position}</p>
-						<ul className="list-disc list-inside mt-2">
-							{Carrier.description.map((desc, i) => (
-								<li key={i} className="text-sm">
-									{desc}
-								</li>
-							))}
-						</ul>
-						<div className="flex flex-wrap gap-2 mt-3">
-							{Carrier.technologies.map((tech, i) => (
-								<span key={i} className="badge badge-primary">
-									{tech}
-								</span>
-							))}
-						</div>
+		<div className="space-y-4">
+			{Carriers.technologies.map((Carrier, index) => (
+				<div key={index} className="collapse collapse-arrow">
+					<input type="radio" name="work" />
+					<div className="collapse-title bg-base-100 text-black">
+						{Carrier.whatSkill}
+						<i
+							className={getIconPath(
+								Carrier.whatSkill.toLowerCase()
+							)}
+						></i>
 					</div>
-				</li>
+					<div className="collapse-content">
+						<p>{Carrier.howLong}</p>
+						<p>プロダクトの表示</p>
+					</div>
+				</div>
 			))}
-		</ul>
+		</div>
 	);
 }
