@@ -1,31 +1,31 @@
 {
-  "name": "currire",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "lucide-react": "^0.469.0",
-    "next": "15.1.2",
-    "next-theme": "^0.1.5",
-    "next-themes": "^0.4.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "daisyui": "^4.12.22",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.2",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
-  }
+	"name": "carrier",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"lucide-react": "^0.469.0",
+		"next": "15.1.2",
+		"next-theme": "^0.1.5",
+		"next-themes": "^0.4.4",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"daisyui": "^4.12.22",
+		"eslint": "^9",
+		"eslint-config-next": "15.1.2",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.17",
+		"typescript": "^5"
+	}
 }

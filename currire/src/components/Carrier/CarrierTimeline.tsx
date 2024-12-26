@@ -1,5 +1,6 @@
 // components/CarrierTimeline.tsx
 // import { Timeline } from "react-daisyui";
+import { CarrierEntry } from "@/types/carrier";
 
 interface CarrierTimelineProps {
 	Carriers: CarrierEntry[];
