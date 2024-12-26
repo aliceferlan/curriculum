@@ -12,7 +12,5 @@ interface CarrierSkillsProps {
     technologies: {
         whatSkill: string;
         howLong: string;
-
     }[];
-
 }

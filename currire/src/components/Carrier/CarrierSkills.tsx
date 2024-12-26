@@ -1,5 +1,3 @@
-import Timeline from "daisyui";
-
 interface CarrierTimelineProps {
 	Carriers: CarrierSkillsProps;
 }
@@ -20,22 +18,22 @@ function getIconPath(iconId: string): string {
 	return iconInfo ? iconInfo.iconPath : "devicon-unknown";
 }
 
-export function CarrierSkills({ Carriers }: CarrierTimelineProps) {
+export function CarrierSkills({ technologies }: CarrierSkillsProps) {
 	return (
 		<div className="space-y-4">
-			{Carriers.technologies.map((Carrier, index) => (
+			{technologies.map((Skill, index) => (
 				<div key={index} className="collapse collapse-arrow">
 					<input type="radio" name="work" />
 					<div className="collapse-title bg-base-100 text-black">
-						{Carrier.whatSkill}
+						{Skill.whatSkill}
 						<i
 							className={getIconPath(
-								Carrier.whatSkill.toLowerCase()
+								Skill.whatSkill.toLowerCase()
 							)}
 						></i>
 					</div>
 					<div className="collapse-content">
-						<p>{Carrier.howLong}</p>
+						<p>{Skill.howLong}</p>
 						<p>プロダクトの表示</p>
 					</div>
 				</div>
