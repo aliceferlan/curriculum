@@ -76,7 +76,7 @@ export default function Carrier() {
 			{/* タイムライン */}
 			<section>
 				<h2 className="text-2xl font-semibold mb-6">職務経歴</h2>
-				<CarrierTimeline Carriers={CarrierData} />
+				<CarrierTimeline carriers={CarrierData} />
 			</section>
 
 			{/* スキルセット */}
