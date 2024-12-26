@@ -1,5 +1,6 @@
 import { CarrierTimeline } from "./CarrierTimeline";
 import { CarrierSkills } from "./CarrierSkills";
+import { CarrierEntry, CarrierSkillsProps } from "@/types/carrire";
 
 // サンプルデータ（実際のデータに置き換えてください）
 const CarrierData: CarrierEntry[] = [

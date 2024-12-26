@@ -1,3 +1,5 @@
+import { CarrierEntry, CarrierSkillsProps } from "@/types/carrire";
+
 interface CarrierTimelineProps {
 	Carriers: CarrierSkillsProps;
 }

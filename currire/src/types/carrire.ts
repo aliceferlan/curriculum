@@ -1,5 +1,5 @@
 // 職歴データの型定義
-interface CarrierEntry {
+export interface CarrierEntry {
     company: string;
     period: string;
     position: string;
@@ -8,7 +8,7 @@ interface CarrierEntry {
 }
 
 // スキルセットコンポーネントのPropsの型定義
-interface CarrierSkillsProps {
+export interface CarrierSkillsProps {
     technologies: {
         whatSkill: string;
         howLong: string;
