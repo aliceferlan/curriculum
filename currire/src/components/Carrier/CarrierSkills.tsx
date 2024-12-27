@@ -37,8 +37,8 @@ export function CarrierSkills({ technologies }: CarrierSkillsProps) {
 					</tr>
 				</thead>
 				<tbody>
-					{technologies.map((skill, _) => (
-						<tr className="hover">
+					{technologies.map((skill, index) => (
+						<tr className="hover" key={index}>
 							<td>
 								{skill.whatSkill}
 								<i className={getIconPath(skill.whatSkill)}></i>
