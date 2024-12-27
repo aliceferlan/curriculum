@@ -1,6 +1,5 @@
 // 使用する型のみをインポート
 import { CarrierSkillsProps } from "@/types/carrier";
-import { table } from "console";
 
 // アイコン定義のオブジェクト
 const icons: { [key: string]: { iconPath: string; id: string } } = {
@@ -38,7 +37,7 @@ export function CarrierSkills({ technologies }: CarrierSkillsProps) {
 					</tr>
 				</thead>
 				<tbody>
-					{technologies.map((skill, index) => (
+					{technologies.map((skill, _) => (
 						<tr className="hover">
 							<td>
 								{skill.whatSkill}
