@@ -23,7 +23,7 @@ const config: Config = {
     styled: true,
     utils: true,
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('@tailwindcss/typography'),],
 }
 
 export default config

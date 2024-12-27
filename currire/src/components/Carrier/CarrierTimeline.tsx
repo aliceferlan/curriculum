@@ -31,6 +31,7 @@ export function CarrierTimeline({ carriers }: CarrierTimelineProps) {
 					</div>
 				</li>
 			))}
+			<li></li>
 		</ul>
 	);
 }

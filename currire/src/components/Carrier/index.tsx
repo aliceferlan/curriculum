@@ -1,6 +1,7 @@
 import { CarrierTimeline } from "./CarrierTimeline";
 import { CarrierSkills } from "./CarrierSkills";
 import { CarrierEntry, CarrierSkillsProps } from "@/types/carrier";
+import MarkdownEntry from "@/components/Carrier/Markdown";
 
 // サンプルデータ（実際のデータに置き換えてください）
 const CarrierData: CarrierEntry[] = [
@@ -84,6 +85,7 @@ export default function Carrier() {
 				<h2 className="text-2xl font-semibold mb-6">技術スタック</h2>
 				<CarrierSkills technologies={skillData.technologies} />
 			</section>
+			<MarkdownEntry />
 		</div>
 	);
 }

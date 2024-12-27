@@ -1,4 +1,10 @@
 // 職歴データの型定義
+export interface WorkData {
+    period: string;
+    title: string;
+    description: string[];
+}
+
 export interface CarrierEntry {
     company: string;
     period: string;
