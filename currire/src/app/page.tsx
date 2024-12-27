@@ -1,6 +1,7 @@
 // src/app/page.tsx
 import Image from "next/image";
 import Link from "next/link";
+import Contact from "@/components/Contact";
 
 export default function Home() {
 	return (
@@ -24,6 +25,7 @@ export default function Home() {
 
 			{/* ナビゲーションカード */}
 			<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+				{/* 職務経歴カード */}
 				<Link href="/carrier" className="card">
 					<div className="p-6 bg-white hover:bg-gray-300 rounded-lg shadow-lg">
 						<h2 className="text-2xl font-bold mb-2">職務経歴</h2>
@@ -32,6 +34,8 @@ export default function Home() {
 						</p>
 					</div>
 				</Link>
+
+				{/* 履歴カード */}
 				<Link href="/history" className="card">
 					<div className="p-6 bg-white hover:bg-gray-300 rounded-lg shadow-lg">
 						<h2 className="text-2xl font-bold mb-2">履歴</h2>
@@ -40,12 +44,9 @@ export default function Home() {
 						</p>
 					</div>
 				</Link>
-				<Link href="/contact" className="card w-full">
-					<div className="p-6 bg-white hover:bg-gray-300 rounded-lg shadow-lg">
-						<h2 className="text-2xl font-bold mb-2">連絡先</h2>
-						<p className="text-gray-600">お気軽にどうぞ ψ(｀∇´)ψ</p>
-					</div>
-				</Link>
+				<div className="md:col-span-2">
+					<Contact />
+				</div>
 			</div>
 		</div>
 	);

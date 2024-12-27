@@ -4,11 +4,11 @@ import { Mail, Book, Github } from "lucide-react";
 export default function Contact() {
 	return (
 		// コンテナに上下のパディングを追加
-		<div className="container mx-auto py-12">
+		<div className="container mx-auto ">
 			{/* カードのスタイリング */}
 			<div
-				className="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8 
-                      transform transition-all hover:-translate-y-1 hover:shadow-xl
+				className="bg-white rounded-xl shadow-lg p-8 
+                      transform transition-all hover:shadow-xl
                       dark:bg-gray-800"
 			>
 				<h2 className="text-2xl font-bold mb-6 text-center">
