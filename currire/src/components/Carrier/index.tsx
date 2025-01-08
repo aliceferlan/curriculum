@@ -163,7 +163,6 @@ export default function Carrier() {
 				<h2 className="text-2xl font-semibold mb-6">技術スタック</h2>
 				<CarrierSkills technologies={skillData.technologies} />
 			</section>
-			<MarkdownEntry />
 		</div>
 	);
 }
