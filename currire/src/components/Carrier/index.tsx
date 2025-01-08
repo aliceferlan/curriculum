@@ -1,6 +1,7 @@
 import { CarrierTimeline } from "./CarrierTimeline";
 import { CarrierSkills } from "./CarrierSkills";
 import { CarrierEntry, CarrierSkillsProps } from "@/types/carrier";
+
 // import MarkdownEntry from "@/components/Carrier/Markdown";
 // import { WorkData } from "@/types/carrier";
 
@@ -16,6 +17,7 @@ const CarrierData: CarrierEntry[] = [
 			"C#を使用した社内アプリケーションの開発",
 		],
 		technologies: ["PHP", "JavaScript", "CSS", "Python", "C#"],
+		works: [],
 	},
 	{
 		company: "グループホーム",
@@ -24,6 +26,7 @@ const CarrierData: CarrierEntry[] = [
 		position: "一般スタッフ",
 		description: ["介護対応", "家事作業", "事務作業"],
 		technologies: [],
+		works: [],
 	},
 	// 他の職歴データ...
 ];
@@ -58,45 +61,11 @@ const skillData: CarrierSkillsProps = {
 			whatSkill: "NextJS",
 			howLong: "Hobby",
 		},
-
-		// 他のスキルデータ...
 	],
 };
 
 const summary =
 	"現職では情報システムとして、社内アプリ開発に従事しております。\n社員のスキルレベルを考慮し、'誰でもマニュアルを読まなくても使い方が分かる'をモットーに開発を進めてきました。";
-
-// const data: WorkData = {
-// 	title: "社内日報システムのWeb化プロジェクト",
-// 	serviceType: "Webサービス",
-// 	priod: "2021/07/01 ~ 2021/09/30",
-// 	role: "フロントエンドエンジニア",
-// 	teamContent:
-// 		"フロントエンドエンジニア1名、バックエンドエンジニア1名、デザイナー1名",
-// 	techStack: [
-// 		"React",
-// 		"Next.js",
-// 		"TypeScript",
-// 		"Tailwind CSS",
-// 		"Vercel",
-// 		"git",
-// 		"GitHub",
-// 	],
-// 	challenges: [
-// 		"既存の社内日報システムをWeb化する",
-// 		"デザイナーとのコミュニケーションを円滑にする",
-// 		"デザインカンプを元にコンポーネントを作成する",
-// 		"デザイナーとのコミュニケーションを円滑にする",
-// 		"デザインカンプを元にコンポーネントを作成する",
-// 	],
-// 	solvedApproach: `どうやった？`,
-// 	results: [
-// 		"社内日報システムのWeb化",
-// 		"デザイナーとのコミュニケーションの改善",
-// 		"デザインカンプを元にコンポーネントを作成",
-// 	],
-// 	overall: `総括`,
-// };
 
 export default function Carrier() {
 	return (

@@ -12,6 +12,11 @@ export interface WorkData {
     overall: string;
 }
 
+interface Work {
+    title: string;
+    content: string;
+}
+
 export interface CarrierEntry {
     company: string;
     companyID: string;
@@ -19,6 +24,7 @@ export interface CarrierEntry {
     position: string;
     description: string[];
     technologies: string[];
+    works: Work[];
 }
 
 // スキルセットコンポーネントのPropsの型定義
