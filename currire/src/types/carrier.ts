@@ -7,6 +7,7 @@ export interface WorkData {
 
 export interface CarrierEntry {
     company: string;
+    companyID: string;
     period: string;
     position: string;
     description: string[];

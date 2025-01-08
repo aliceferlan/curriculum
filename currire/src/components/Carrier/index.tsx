@@ -6,6 +6,7 @@ import MarkdownEntry from "@/components/Carrier/Markdown";
 const CarrierData: CarrierEntry[] = [
 	{
 		company: "株式会社成玉舎",
+		companyID: "seigyoku",
 		period: "2021年2月 - 現在",
 		position: "情報システム課",
 		description: [
@@ -17,6 +18,7 @@ const CarrierData: CarrierEntry[] = [
 	},
 	{
 		company: "グループホーム",
+		companyID: "group_home",
 		period: "2020年1月 - 2021年1月",
 		position: "一般スタッフ",
 		description: ["介護対応", "家事作業", "事務作業"],
