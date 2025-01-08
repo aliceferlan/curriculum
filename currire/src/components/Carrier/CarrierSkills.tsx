@@ -13,6 +13,7 @@ const icons: { [key: string]: { iconPath: string; id: string } } = {
 	git: { iconPath: "git-plain", id: "git" },
 	github: { iconPath: "github-original", id: "github" },
 	html: { iconPath: "html5-plain", id: "html" },
+	go: { iconPath: "go-original-wordmark", id: "go" },
 };
 
 // アイコンパスを取得する関数

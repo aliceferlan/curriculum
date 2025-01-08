@@ -18,9 +18,7 @@ export default function Home() {
 			</div>
 			<section className="text-center py-20">
 				<h1 className="text-4xl font-bold mb-4">Welcome to My Box!!</h1>
-				<p className="text-xl text-gray-600">
-					Webエンジニアとしての経験と実績をご紹介します
-				</p>
+				<p className="text-xl text-gray-600">経験と実績置き場</p>
 			</section>
 
 			{/* ナビゲーションカード */}

@@ -59,6 +59,7 @@ const skillData: CarrierSkillsProps = {
 			whatSkill: "NextJS",
 			howLong: "Hobby",
 		},
+		{ whatSkill: "Go", howLong: "Hobby" },
 	],
 };
 
