@@ -2,7 +2,7 @@ import { CarrierTimeline } from "./CarrierTimeline";
 import { CarrierSkills } from "./CarrierSkills";
 import { CarrierEntry, CarrierSkillsProps } from "@/types/carrier";
 // import MarkdownEntry from "@/components/Carrier/Markdown";
-import { WorkData } from "@/types/carrier";
+// import { WorkData } from "@/types/carrier";
 
 const CarrierData: CarrierEntry[] = [
 	{
