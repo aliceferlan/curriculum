@@ -1,7 +1,7 @@
 import { CarrierTimeline } from "./CarrierTimeline";
 import { CarrierSkills } from "./CarrierSkills";
 import { CarrierEntry, CarrierSkillsProps } from "@/types/carrier";
-import MarkdownEntry from "@/components/Carrier/Markdown";
+// import MarkdownEntry from "@/components/Carrier/Markdown";
 import { WorkData } from "@/types/carrier";
 
 const CarrierData: CarrierEntry[] = [
@@ -63,83 +63,40 @@ const skillData: CarrierSkillsProps = {
 	],
 };
 
-const markdownContent = `
-## 詳細なスキルセット
-
-### フロントエンド
-- **HTML/CSS**
-  - レスポンシブデザインの実装
-  - Bootstrapを使用したUI開発
-  - Tailwind CSSによるスタイリング
-
-- **JavaScript/TypeScript**
-  - Reactを使用したSPA開発
-  - Next.jsによるSSR/SSG実装
-  - TypeScriptを用いた型安全な開発
-
-### バックエンド
-- **PHP**
-  - 社内ポータルサイトの開発・保守
-  - レガシーコードのリファクタリング
-
-- **Python**
-  - 業務自動化スクリプトの開発
-
-  
-- **C#**
-  - Windows Forms, .NET Frameworkを使用した業務システム開発
-
-### データベース
-- **SQL**
-  - MySQL を使用したデータベース設計
-  - 基本的なCRUD処理の実装
-
-### その他
-- **開発ツール**
-  - Git/GitHubによるバージョン管理
-  - VSCodeを使用した開発
-  - Docker環境の構築・運用
-
-- **コミュニケーション**
-  - 技術選定の提案・実装
-  - チーム内コードレビュー
-  - 顧客要件のヒアリング・提案
-`;
-
 const summary =
 	"現職では情報システムとして、社内アプリ開発に従事しております。\n社員のスキルレベルを考慮し、'誰でもマニュアルを読まなくても使い方が分かる'をモットーに開発を進めてきました。";
 
-const data: WorkData = {
-	title: "社内日報システムのWeb化プロジェクト",
-	serviceType: "Webサービス",
-	priod: "2021/07/01 ~ 2021/09/30",
-	role: "フロントエンドエンジニア",
-	teamContent:
-		"フロントエンドエンジニア1名、バックエンドエンジニア1名、デザイナー1名",
-	techStack: [
-		"React",
-		"Next.js",
-		"TypeScript",
-		"Tailwind CSS",
-		"Vercel",
-		"git",
-		"GitHub",
-	],
-	challenges: [
-		"既存の社内日報システムをWeb化する",
-		"デザイナーとのコミュニケーションを円滑にする",
-		"デザインカンプを元にコンポーネントを作成する",
-		"デザイナーとのコミュニケーションを円滑にする",
-		"デザインカンプを元にコンポーネントを作成する",
-	],
-	solvedApproach: `どうやった？`,
-	results: [
-		"社内日報システムのWeb化",
-		"デザイナーとのコミュニケーションの改善",
-		"デザインカンプを元にコンポーネントを作成",
-	],
-	overall: `総括`,
-};
+// const data: WorkData = {
+// 	title: "社内日報システムのWeb化プロジェクト",
+// 	serviceType: "Webサービス",
+// 	priod: "2021/07/01 ~ 2021/09/30",
+// 	role: "フロントエンドエンジニア",
+// 	teamContent:
+// 		"フロントエンドエンジニア1名、バックエンドエンジニア1名、デザイナー1名",
+// 	techStack: [
+// 		"React",
+// 		"Next.js",
+// 		"TypeScript",
+// 		"Tailwind CSS",
+// 		"Vercel",
+// 		"git",
+// 		"GitHub",
+// 	],
+// 	challenges: [
+// 		"既存の社内日報システムをWeb化する",
+// 		"デザイナーとのコミュニケーションを円滑にする",
+// 		"デザインカンプを元にコンポーネントを作成する",
+// 		"デザイナーとのコミュニケーションを円滑にする",
+// 		"デザインカンプを元にコンポーネントを作成する",
+// 	],
+// 	solvedApproach: `どうやった？`,
+// 	results: [
+// 		"社内日報システムのWeb化",
+// 		"デザイナーとのコミュニケーションの改善",
+// 		"デザインカンプを元にコンポーネントを作成",
+// 	],
+// 	overall: `総括`,
+// };
 
 export default function Carrier() {
 	return (

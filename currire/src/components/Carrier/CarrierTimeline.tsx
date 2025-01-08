@@ -1,4 +1,3 @@
-// components/CarrierTimeline.tsx
 import { CarrierEntry } from "@/types/carrier";
 import fs from "fs";
 import path from "path";
@@ -7,8 +6,22 @@ interface CarrierTimelineProps {
 	carriers: CarrierEntry[];
 }
 
+// 作品情報の型を定義
+interface Work {
+	title: string;
+	content: string;
+}
+
+interface CarrierWorkEntry extends CarrierEntry {
+	works?: Work[];
+}
+
+interface CarrierWorkMap {
+	[company: string]: CarrierWorkEntry;
+}
+
 export function CarrierTimeline({ carriers }: CarrierTimelineProps) {
-	const carrierWork: { [key: string]: any } = {};
+	const carrierWork: CarrierWorkMap = {};
 
 	carriers.forEach((carrier) => {
 		const worksDir = path.join(
@@ -24,20 +37,26 @@ export function CarrierTimeline({ carriers }: CarrierTimelineProps) {
 				.filter((file) => file.endsWith(".md"));
 
 			if (mdFiles.length > 0) {
+				// MDファイルの内容を読み込む
+				const works = mdFiles.map((file) => {
+					const filePath = path.join(worksDir, file);
+					const content = fs.readFileSync(filePath, "utf-8");
+					return {
+						title: file.replace(".md", ""),
+						content: content,
+					};
+				});
+
 				carrierWork[carrier.company] = {
 					...carrier,
-					works: mdFiles,
+					works: works,
 				};
-
-				console.log(mdFiles);
 			} else {
 				carrierWork[carrier.company] = carrier;
 			}
 		} else {
 			carrierWork[carrier.company] = carrier;
 		}
-
-		console.log(carrierWork);
 	});
 
 	return (
@@ -57,12 +76,12 @@ export function CarrierTimeline({ carriers }: CarrierTimelineProps) {
 						</ul>
 						<div className="flex flex-wrap gap-2 mt-3">
 							{work.works &&
-								work.works.map((tech: string, i: number) => (
+								work.works.map((work: Work, i: number) => (
 									<span
 										key={i}
 										className="badge badge-primary"
 									>
-										{tech}
+										{work.title}
 									</span>
 								))}
 						</div>
