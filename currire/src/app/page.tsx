@@ -17,10 +17,10 @@ export default function Home() {
 				></Image>
 			</div>
 			<section className="text-center py-20">
-				<h1 className="text-4xl font-bold mb-4">Welcome!!</h1>
-				{/* <p className="text-xl text-gray-600">
+				<h1 className="text-4xl font-bold mb-4">Welcome to My Box!!</h1>
+				<p className="text-xl text-gray-600">
 					Webエンジニアとしての経験と実績をご紹介します
-				</p> */}
+				</p>
 			</section>
 
 			{/* ナビゲーションカード */}
@@ -40,7 +40,7 @@ export default function Home() {
 					<div className="p-6 bg-white hover:bg-gray-300 rounded-lg shadow-lg">
 						<h2 className="text-2xl font-bold mb-2">履歴</h2>
 						<p className="text-gray-600">
-							学歴や資格、スキルについて
+							学歴や資格、スキルについて (Coming soon)
 						</p>
 					</div>
 				</Link>

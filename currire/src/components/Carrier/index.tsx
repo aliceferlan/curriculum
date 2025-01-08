@@ -3,7 +3,6 @@ import { CarrierSkills } from "./CarrierSkills";
 import { CarrierEntry, CarrierSkillsProps } from "@/types/carrier";
 import MarkdownEntry from "@/components/Carrier/Markdown";
 
-// サンプルデータ（実際のデータに置き換えてください）
 const CarrierData: CarrierEntry[] = [
 	{
 		company: "株式会社成玉舎",
@@ -57,9 +56,55 @@ const skillData: CarrierSkillsProps = {
 			howLong: "Hobby",
 		},
 
+		{ whatSkill: "Go", howLong: "Hobby" },
+
 		// 他のスキルデータ...
 	],
 };
+
+const markdownContent = `
+## 詳細なスキルセット
+
+### フロントエンド
+- **HTML/CSS**
+  - レスポンシブデザインの実装
+  - Bootstrapを使用したUI開発
+  - Tailwind CSSによるスタイリング
+
+- **JavaScript/TypeScript**
+  - Reactを使用したSPA開発
+  - Next.jsによるSSR/SSG実装
+  - TypeScriptを用いた型安全な開発
+
+### バックエンド
+- **PHP**
+  - 社内ポータルサイトの開発・保守
+  - レガシーコードのリファクタリング
+
+- **Python**
+  - 業務自動化スクリプトの開発
+
+  
+- **C#**
+  - Windows Forms, .NET Frameworkを使用した業務システム開発
+
+### データベース
+- **SQL**
+  - MySQL を使用したデータベース設計
+  - 基本的なCRUD処理の実装
+
+### その他
+- **開発ツール**
+  - Git/GitHubによるバージョン管理
+  - VSCodeを使用した開発
+  - Docker環境の構築・運用
+
+- **コミュニケーション**
+  - 技術選定の提案・実装
+  - チーム内コードレビュー
+  - 顧客要件のヒアリング・提案
+`;
+
 const summary =
 	"現職では情報システムとして、社内アプリ開発に従事しております。\n社員のスキルレベルを考慮し、'誰でもマニュアルを読まなくても使い方が分かる'をモットーに開発を進めてきました。";
 
@@ -85,7 +130,7 @@ export default function Carrier() {
 				<h2 className="text-2xl font-semibold mb-6">技術スタック</h2>
 				<CarrierSkills technologies={skillData.technologies} />
 			</section>
-			<MarkdownEntry />
+			<MarkdownEntry markdownContent={markdownContent} />
 		</div>
 	);
 }
