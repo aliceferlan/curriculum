@@ -12,7 +12,8 @@ export interface WorkData {
     overall: string;
 }
 
-interface Work {
+export interface Work {
+    companyID: string;
     title: string;
     content: string;
 }

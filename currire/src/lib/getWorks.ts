@@ -1,12 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import { Work } from '@/types/carrier';
 
-export interface Work {
-    title: string;
-    content: string;
-}
-
-export function getWorksByCompanyId(companyId: string): Work[] {
+export default function getWorksByCompanyId(companyId: string): Work[] {
     const worksDir = path.join(process.cwd(), 'public', 'works', companyId);
 
     if (!fs.existsSync(worksDir)) {
@@ -19,6 +15,7 @@ export function getWorksByCompanyId(companyId: string): Work[] {
         const filePath = path.join(worksDir, file);
         const content = fs.readFileSync(filePath, 'utf-8');
         return {
+            companyID: companyId,
             title: file.replace('.md', ''),
             content: content
         };

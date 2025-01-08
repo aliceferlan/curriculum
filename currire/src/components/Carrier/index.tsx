@@ -1,7 +1,8 @@
 import { CarrierTimeline } from "./CarrierTimeline";
 import { CarrierSkills } from "./CarrierSkills";
 import { CarrierEntry, CarrierSkillsProps } from "@/types/carrier";
-
+import getWorksByCompanyId from "@/lib/getWorks";
+import { Work } from "@/types/carrier";
 // import MarkdownEntry from "@/components/Carrier/Markdown";
 // import { WorkData } from "@/types/carrier";
 
@@ -68,6 +69,12 @@ const summary =
 	"現職では情報システムとして、社内アプリ開発に従事しております。\n社員のスキルレベルを考慮し、'誰でもマニュアルを読まなくても使い方が分かる'をモットーに開発を進めてきました。";
 
 export default function Carrier() {
+	CarrierData.forEach((carrier) => {
+		if (carrier.companyID !== "") {
+			carrier.works = getWorksByCompanyId(carrier.companyID);
+		}
+	});
+
 	return (
 		<div className="space-y-12">
 			{/* 概要セクション */}
