@@ -9,7 +9,7 @@ export default function Home() {
 			{/* ヒーローセクション */}
 			<div className="flex justify-center">
 				<Image
-					src="/img/kid_icon.png"
+					src="/img/icon.JPG"
 					alt="icon"
 					width={300}
 					height={300}

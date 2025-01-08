@@ -1,8 +1,15 @@
 // 職歴データの型定義
 export interface WorkData {
-    period: string;
     title: string;
-    description: string[];
+    serviceType: string;
+    priod: string;
+    teamContent: string;
+    role: string;
+    techStack: string[];
+    challenges: string[];
+    solvedApproach: string;
+    results: string[];
+    overall: string;
 }
 
 export interface CarrierEntry {
