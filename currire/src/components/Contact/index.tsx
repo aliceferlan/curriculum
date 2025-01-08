@@ -1,5 +1,5 @@
 // src/app/contact/page.tsx
-import { Mail, Book, Github, Twitter } from "lucide-react";
+import { Mail, Book, Github } from "lucide-react";
 
 export default function Contact() {
 	return (
