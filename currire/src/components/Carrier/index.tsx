@@ -13,6 +13,7 @@ const CarrierData: CarrierEntry[] = [
 			"PHP, JavaScript, CSSを使用した社内ポータルサイトの開発・運用",
 			"Pythonによる一部業務の自動化",
 			"C#を使用した社内アプリケーションの開発",
+			"社内ヘルプデスク業務",
 		],
 		technologies: ["PHP", "JavaScript", "CSS", "Python", "C#"],
 		works: [],
@@ -26,7 +27,6 @@ const CarrierData: CarrierEntry[] = [
 		technologies: [],
 		works: [],
 	},
-	// 他の職歴データ...
 ];
 const skillData: CarrierSkillsProps = {
 	technologies: [
