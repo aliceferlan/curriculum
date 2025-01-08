@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint --dir src",
+		"lint:fix": "next lint --dir src --fix"
 	},
 	"dependencies": {
 		"lucide-react": "^0.469.0",
@@ -23,6 +24,8 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"@typescript-eslint/eslint-plugin": "^8.19.1",
+		"@typescript-eslint/parser": "^8.19.1",
 		"daisyui": "^4.12.22",
 		"eslint": "^9",
 		"eslint-config-next": "15.1.2",

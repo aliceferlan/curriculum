@@ -8,7 +8,7 @@ export default function MordalAcordion(markdownContent: MarkdownEntryProps) {
 		<dialog id="my_modal_1" className="modal">
 			<div className="modal-box">
 				{markdownContent.markdownContent.map((content, index) => (
-					<div className="collapse bg-base-200">
+					<div className="collapse bg-base-200" key={index}>
 						<input
 							type="radio"
 							name="my-accordion-1"
