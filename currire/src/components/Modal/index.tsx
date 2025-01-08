@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
 // propsの型定義
@@ -36,18 +35,18 @@ export default function ModalAccordion({
 								<ReactMarkdown
 									components={{
 										// インライン要素のスタイリング
-										p: ({ node, ...props }) => (
+										p: ({ ...props }) => (
 											<p className="my-2" {...props} />
 										),
 										// 見出しのスタイリング
-										h1: ({ node, ...props }) => (
+										h1: ({ ...props }) => (
 											<h1
 												className="text-2xl font-bold my-4"
 												{...props}
 											/>
 										),
 										// リストのスタイリング
-										ul: ({ node, ...props }) => (
+										ul: ({ ...props }) => (
 											<ul
 												className="list-disc ml-4 my-2"
 												{...props}
